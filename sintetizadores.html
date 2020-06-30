@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Ecualizaci&oacute;n</title>
+    <link rel="shortcut icon" href="img/logo.png" type="image/x-icon">
+    <link rel="stylesheet" href="css/estilos2.css">
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;700;800&display=swap" rel="stylesheet">
+    </head>
+<body>
+ <header>
+      <nav>
+         <a href="principal.html">Inicio</a>
+         <a href="musica.html">M&uacute;sica</a>
+         <a href="ciencia_sonido.html">La ciencia del sonido</a>
+         <a href="relacion_hombre_sonido.html">Relaci&oacute;n Hombre-Sonido</a>
+         <a href="aplicacion_sonido_tecnologia.html">Aplicaci&oacute;n de tecnología en el sonido</a>
+         <a href="nuestro_equipo.html">Nuestro equipo</a>
+     </nav>
+     <section class="textos-header">
+         <h1>Ecualizaci&oacute;n</h1>
+         <h2>La m&uacute;sica es el sonido de nuestras vidas</h2>
+     </section>
+     <div class="wave" style="height: 150px; overflow: hidden;"><svg viewBox="0 0 500 150" preserveAspectRatio="none"
+                style="height: 100%; width: 100%;">
+                <path d="M0.00,49.98 C150.00,150.00 349.20,-50.00 500.00,49.98 L500.00,150.00 L0.00,150.00 Z"
+                    style="stroke: none; fill: #fff;"></path>
+            </svg></div>
+ </header>
+    <main>
+        <section class="contenedor de-introduccion">
+            <h2 class="titulo">Sintetizadores</h2>
+           <aside id="ladoizquierdo">
+                <p>Un sintetizador es un instrumento musical electrónico, ya sea analógico o digital, que procesando señales eléctricas a través de diferentes módulos es capaz de generar un sonido. Los sintetizadores usan varios métodos para crear una señal sonora nueva. Entre las técnicas de síntesis más usadas están: la síntesis aditiva, la síntesis substractiva, de modulación de frecuencia, de modelado físico, modulación de fase y síntesis basada en samples, etc.
+                    <br><br>
+               <h3>Componentes de un sintetizador</h3>
+               Un sintetizador está compuesto por diversos módulos electrónicos para procesar las señales eléctricas colocados en serie o con un cierto grado de retro-alimentación. Los sintetizadores de software comúnmente emulan los diseños y sonidos de los sintetizadores analógicos clásicos. Los módulos por los que se hacen pasar las señales son básicamente de cuatro tipos: osciladores, generadores de envolventes, filtros y amplificadores.
+                     <br>
+               <h4>Osciladores</h4>
+               Los osciladores son dispositivos que permiten convertir una señal continua en una corriente alterna con formas variadas. Las formas de onda que se pueden generar son, básicamente, sinusoidal. cuadrada, triangular y sierra. Esta forma de la onda define en gran medida la textura del sonido creado.
+Los osciladores, y también filtros y amplificadores que veremos a continuación, pueden ser controlados por voltaje (VC, voltage-controlled) o digitalmente (DC, digital-controlled). Nos encontraremos entonces en los paneles de control de los sintetizadores con parámetros como VCO y DCO.
+                <br>
+               <h4>Generadores de envolventes</h4>
+               Puedes encontrar este término en los controles en su variante inglesa ‘envelope’ o por las siglas de sus fases: ADSR. Cuando un instrumento (cualquier instrumento, no solo los sintetizadores) genera un sonido, se producen variaciones en la potencia y en el contenido espectral del sonido a lo largo del tiempo.
+                <br>
+               <h4>Filtros</h4>
+               Un filtro eléctrico o filtro electrónico es un elemento que elimina una determinada frecuencia o gama de frecuencias de la señal eléctrica que pasa a través de él, pudiendo modificar tanto su amplitud como su fase. Los filtros electrónicos son particularmente importantes en la síntesis substractiva y están controlados a menudo por una envolvente o un LFO. Tenemos tres tipos fundamentales: de paso alto, de paso bajo o de paso de banda.
+               <br>
+               <h4>Amplificadores</h4>
+              Un amplificador es un dispositivo electrónico que aumenta la ganancia de una onda eléctrica en función de un voltaje de control. Puede decirse que tiene un efecto antagónico a los filtros. El voltaje que sirve de control en el funcionamiento de los VCA (recuerda, Voltage-Controlled Amplifier) puede provenir de un generador de envolventes o un LFO.
+               <br><br>
+            <div align="center">
+             <img src="img/partes_sintetizador.jpg" class=imagen-origen>
+            </div>
+               <br><br>
+                <h3>Técnicas de síntesis</h3>
+              En este apartado veremos de forma rápida los procesos en los que se basan los sintetizadores para generar sus sonidos. Esto apenas tiene implicaciones prácticas, ya que forman parte de las entrañas de los instrumentos, pero nunca está de más tener una idea somera para mejorar nuestra formación.
+                     <br>
+               <h4>Síntesis auditiva</h4>
+              Es un proceso por el cual se crean sonidos complejos partiendo de sus componentes puros, las ondas sinusoidales. Los timbres en este tipo de síntesis están formados por una frecuencia fundamental y una serie de ondas que la complementan denominadas parciales. Las parciales pueden ser tanto armónicas, si son múltiplos enteros de esta frecuencia fundamental, como no armónicas, si no lo son.
+               <br>
+               Este tipo de síntesis es común en instrumentos MIDI sencillos y tarjetas de sonido. Para realizar este proceso se hace necesario el uso de bancos de osciladores y para el control de las parciales se precisa del manejo de las envolventes.
+               <br>
+               <h4>Síntesis substractiva</h4>
+              La señal en este tipo de síntesis es generada por un oscilador y después filtrada. Se parte de señales muy ricas en armónicos y mediante el uso de filtros se eliminan las frecuencias no deseadas. La mayoría de los sonidos electrónicos que imitan conjuntos de metales o cuerdas son generados mediante este método, variando, según el caso, la frecuencia de corte del filtro para conseguir sonidos con más o menos brillo.
+               <br>
+               <h4>Síntesis por modulación</h4>
+              Con este método se genera un espectro de gran complejidad a partir de 2 generadores. Puede encontrarse bajo dos denominaciones: síntesis por modulación de frecuencia (FM) o síntesis mediante distorsión de fase. Ambas funcionan de la misma manera, pero la segunda denominación surgió para evitar infringir las patentes de la primera. En este tipo de síntesis, un oscilador (también conocido como modulador) modifica la frecuencia del otro colocado a continuación (llamado en este caso portador o carrier).
+               <br>
+               <h4>Síntesis mediante modelado físico</h4>
+              Es aquella en que la síntesis del sonido se crea mediante ecuaciones y algoritmos para simular un instrumento real o alguna fuente física de sonido. El proceso incluye el modelado de componentes de objetos musicales y la creación de sistemas que definan dicha acción a través del tiempo: filtros, envolventes y otros parámetros.
+               <br>
+               <h4>Síntesis mediante muestras</h4>
+              La síntesis mediante muestras de sonido se basa en la grabación de un instrumento real como una forma de onda digitalizada y su reproducción a diferentes velocidades (pitch) para producir diferentes tonos.
+               <br><br>
+               <div align="center">
+             <img src="img/sintesis.jpg" class=imagen-origen>
+            </div>
+                </p>
+             </aside>
+        </section>
+    </main>
+    <footer>
+      <h2 class="titulo-final">Todos los derechos reservados &copy; Aldrahn Alessandro Correa Ju&aacute;rez | 6IV12 | 2020</h2>
+    </footer>
+</body>
+</html>
